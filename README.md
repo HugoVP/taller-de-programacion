@@ -33,18 +33,18 @@ En Python las variables no se declaran explicitamente. Estas se crean al momento
 
 Ejemplos:
 
-foo = 5
-bar = 12.5
-baz = True
-qux = "Hello World!"
-xyz = 'C'
+    foo = 5
+    bar = 12.5
+    baz = True
+    qux = "Hello World!"
+    xyz = 'C'
 
 Las variables no necesitan ser declaradas con un tipo de dato en particular, y pueden cambiar su tipo despues de haber sido definidas.
 
 Ejemplos:
 
-foobar = 4
-foobar = "Lorem ipsum"
+    foobar = 4
+    foobar = "Lorem ipsum"
 
 Conversion de variables (Casting)
 
@@ -52,10 +52,10 @@ El tipo de una variable puede ser cambiado practicamente a voluntad usando funci
 
 Ejemplos:
 
-foobar = str(5)      # el valor de foobar es de tipo string, o sea '5' o "5"
-foobar = int(5)      # el valor de foobar es de tipo entero, o sea 5
-foobar = float(5)    # el valor de foobar es de tipo flotante, o sea 5.0
-foobar = bool(5)     # el valor de foobar es de tipo booleano, o sea True (True para todo valor diferente de 0, False para 0)
+    foobar = str(5)      # el valor de foobar es de tipo string, o sea '5' o "5"
+    foobar = int(5)      # el valor de foobar es de tipo entero, o sea 5
+    foobar = float(5)    # el valor de foobar es de tipo flotante, o sea 5.0
+    foobar = bool(5)     # el valor de foobar es de tipo booleano, o sea True (True para todo valor diferente de 0, False para 0)
 
 Obtener el tipo de una variable
 
@@ -63,19 +63,19 @@ Para obtener el tipo de una variable en Python usamos la funcion type().
 
 Ejemplos:
 
-foobar = 10
-baz = "John Doe"
-
-type(foobar)
-type(baz)
+    foobar = 10
+    baz = "John Doe"
+    
+    type(foobar)
+    type(baz)
 
 Distinguen entre mayusculas y minusculas
 
 Los nombres de variables en Python, y en muchos otros lenguajes de programacion, distinguen entre mayusculas y minusculas
 
-foobar = 123
-FooBar = "Hello World!"
-Foobar = True
+    foobar = 123
+    FooBar = "Hello World!"
+    Foobar = True
 
 2.2 Reglas de los nombres de variables en Python
 
