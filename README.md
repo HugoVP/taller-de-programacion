@@ -88,9 +88,9 @@ Las reglas que siguen los nombres de las variables en Python son las siguientes:
 
 Ejemplos de nombres de variables incorrectos:
 
-123foobar = 123
-foo-bar = 123
-foo bar = 123
+123foobar = 123\n
+foo-bar = 123\n
+foo bar = 123\n
 
 2.3 Asignacion de multiples valores
 
