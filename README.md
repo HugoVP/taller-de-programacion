@@ -77,7 +77,9 @@ Los nombres de variables en Python, y en muchos otros lenguajes de programacion,
     FooBar = "Hello World!"
     Foobar = True
 
-2.2 Reglas de los nombres de variables en Python
+2.2 Nombres de variables en Python
+
+2.2.1 Reglas
 
 Las reglas que siguen los nombres de las variables en Python son las siguientes:
 
@@ -88,9 +90,31 @@ Las reglas que siguen los nombres de las variables en Python son las siguientes:
 
 Ejemplos de nombres de variables incorrectos:
 
-123foobar = 123\n
-foo-bar = 123\n
-foo bar = 123\n
+    123foobar = 123
+    foo-bar = 123
+    foo bar = 123
+    
+2.2.2 Nombres de variables con múltiples palabras
+
+Los nombres de variables con múltiples palabras suelen ser complicados de leer, por lo que se usan diferentes técnicas para ayudar a mejorar su legibilidad.
+
+2.2.2.1 Camel Case
+
+Cada palabra, a excepción de la primera, inicia con letra mayúscula:
+
+    estaEsUnaVariable = "Juan Pérez"
+    
+2.2.2.2 Pascal Case
+
+Cada palabra inicia con letra mayúscula:
+
+    EstaEsUnaVariable = "Juan Pérez"
+    
+2.2.2.3 Snake Case
+
+Cada palabra se separa mediante un guión bajo:
+
+    esta_es_una_variable = "Juan Pérez"
 
 2.3 Asignacion de multiples valores
 
@@ -100,7 +124,7 @@ Python permite asignar valores a multiples variables al mismo tiempo:
 
 Ejemplo:
 
-x, y, z = "Verde", "Blanco", "Rojo"
+    x, y, z = "Verde", "Blanco", "Rojo"
 
 Solo se debe de asegurar de que el numero de valores corresponda con el numero de variables.
 
@@ -108,20 +132,31 @@ Solo se debe de asegurar de que el numero de valores corresponda con el numero d
 
 Un mismo valor puede asignarse a multiples variables en una misma linea de codigo
 
-Ejemplos:
+Ejemplo:
 
-foobar = baz = xyz = "Hello World!"
+    foobar = baz = xyz = "Hello World!"
 
 2.4 Desempaquetar una coleccion
 
 Si se tiene una coleccion (un objeto con multiples valores), Python permite extraer cada uno de sus valores en variables.
 
-Ejemplos:
+Ejemplo:
 
-frutas = \["manzana", "platano", "fresa"\]
-f1, f2, f3 = frutas.
+    frutas = \["manzana", "platano", "fresa"\]
+    f1, f2, f3 = frutas.
+    
+2.5 Salida de variables
 
+La función print() se usa a menudo en Python para "imprimir" (o como salida de) variables:
 
+    saludos = "Hola Mundo!"
+    print(saludos)
+    
+Con la funcion print() es posible imprimir múltiples variables, separándolas mediante una coma (,):
+
+    a = "Hola"
+    b = "Mundo!"
+    c = "con Python
 
 
 
