@@ -154,9 +154,90 @@ La función print() se usa a menudo en Python para "imprimir" (o como salida de)
     
 Con la funcion print() es posible imprimir múltiples variables, separándolas mediante una coma (,):
 
-    a = "Hola"
-    b = "Mundo!"
+    a = "Hola "
+    b = "Mundo! "
     c = "con Python
+    
+    print(a, b, c)
+    
+Tambien es posible imprimir multiples variables usando el operador +:
+    
+    print(a + b + c)
 
+Nota: Es importante agregar un espacio en blanco despues de las palabras "Hola " y "Mundo! ", pues sin ellas el resultado seria "HolaMundo!conPython".
 
+En el caso de numeros, al usar el operador + este funciona como un operador matematico, es decir el resultado sera:
+
+    num1 = 10
+    num2 = 12
+    
+    print(num1 + num2)
+    
+En la funcion print() al tratar de imprimir una cadena y ademas un numero usando el operador + (en general en cualquier espacio), esto resultara en un error:
+
+    foo = 10
+    bar = "Juanito"
+    
+    print(foo + bar)
+    
+En este caso la mejor forma de imprimir variables con tipos diferentes es hacer uso de la separacion mediante comas (,):
+
+    print(foo, bar)
+    
+2.6 Alcance de las variables (scope)
+
+2.6.1 Variables globales y locales
+
+Las variables que se crean fuera de una funcion se conocen como variables globales, y estan disponibles para ser usadas en cualquier momento, tanto dentro como fuera de cualquier funcion:
+
+    # Una variable creada dentro de una funcion y luego usada dentro de la funcion
+    
+    myVar = 101
+    
+    def myFunc():
+      print(myVar, " dalmatas")
+      
+    myFunc()
+    
+Si se crea una variable, dentro de una funcion, con el mismo nombre que una variable ya existente, fuera de dicha funcion, esta variable sera considerada como local, y unicamente puede ser usada dentro de la funcion donde fue creada. La variable global con el mismo nombre permanecera inacfectada.
+
+    # Una variable creada dentro de una funcion, cuyo nombre es igual al de una variable global existente
+    
+    myVar = 101
+    
+    def myFunc():
+      myVar = 102
+      print(myVar, " dalmatas")
+      
+    myFunc()
+    
+    print(myVar, " dalmatas")
+    
+2.6.2 La palabra reservada global
+
+De manera predeterminada, las variables creadas dentro de funciones son consideradas locales, pero se puede usar la palabra reservada global para crear variables globales dentro de una funcion:
+
+    # Una variable declarada con la palabra reservada global
+     
+    def myFunc():
+      global myVar = 101
+      print(myVar, " dalmatas")
+      
+    myFunc()
+    
+    print(myVar, " dalmatas")
+    
+Incluso se puede usar la palabra reservada global para afectar a una variable global dentro de una funcion
+
+    # Una variable global afecta dentro de una funcion, referida mediante el uso de la palabra reservada global
+    
+    myVar = 101
+    
+    def myFunc():
+      global myVar
+      myVar = 102
+      
+    myFunc()
+    
+    print(myVar, " dalmatas")
 
